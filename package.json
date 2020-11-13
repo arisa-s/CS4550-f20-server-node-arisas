@@ -1,0 +1,14 @@
+{
+  "name": "cs4550-f20-server-node-arisas",
+  "version": "1.0.0",
+  "description": "Node JS Middle Tier for CS4550 Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arisa Shiraishi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
