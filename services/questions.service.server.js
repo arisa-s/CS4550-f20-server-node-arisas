@@ -1,4 +1,4 @@
-let questions = require("./services/questions.service.server.js");
+let questions = require("./questions");
 
   const findQuestionsForQuiz = (qid) =>
   questions.filter((q) => q.quizId === qid)
