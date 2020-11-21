@@ -3,11 +3,18 @@ const quizService = require("../services/quiz.service.server.js")
 module.exports = (app) => {
   
 
-  const findAllQuizzes = (req, res) => 
-  res.send(quizService.findAllQuizzes())
+  const findAllQuizzes = (req, res) => {
+    quizService.findAllQuizzes()
+  .then(quizzes => res.send(quizzes))
+  }
+  
 
-  const findQuizById = (req, res) =>
-  res.send(quizService.findQuizById(req.params['qid']))
+  const findQuizById = (req, res) => {
+    quizService.findQuizById(req.params['qid'])
+    .then(quiz => res.send(quiz))
+
+  }
+  
 
 
   app.get("/api/quizzes", findAllQuizzes);
