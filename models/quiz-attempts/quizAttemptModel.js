@@ -1,4 +1,4 @@
-/*const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const quizAttemptSchema = require('./quizAttemptSchema')
 
 const quizAttemptModel = mongoose.model(
@@ -17,4 +17,4 @@ const scoreQuiz = (questions) => {
     quizAttemptsModel.create({ quiz: qid, answers: attempt, score: scoreQuiz(attempt) })
  
  module.exports = { createAttempt, findAttemptsForQuiz }
- */
+ 

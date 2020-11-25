@@ -1,4 +1,4 @@
-/*const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 const questionSchema = require("../questions/questionSchema");
 
@@ -11,4 +11,3 @@ const quizAttemptSchema = mongoose.Schema(
   { collection: "attempts" }
 );
 module.exports = quizAttemptSchema;
-*/
