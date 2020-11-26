@@ -1,16 +1,4 @@
-const mongoose = require('mongoose');
-const quizSchema = require("./quizSchema")
-const quizModel = mongoose.model("QuizModel", quizSchema)
-/*
-const findAllQuizzes = () =>
-quizModel.find()
-
-const findQuizById = (qid) => 
-quizModel.findById(qid)
-
-module.exports = {
-    findAllQuizzes, findQuizById
-}
-*/
-
-module.exports = quizModel
+const mongoose = require("mongoose");
+const quizSchema = require("./quizSchema");
+const quizModel = mongoose.model("QuizModel", quizSchema);
+module.exports = quizModel;
