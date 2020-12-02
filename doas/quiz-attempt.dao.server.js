@@ -12,6 +12,7 @@ const scoreQuiz = (questions) => {
 
 const findAttemptsForQuiz = (qzid) =>
   quizAttemptModel.find({ quiz: qzid }).populate("quiz", "title _id");
+
 const createAttempt = (qid, attempt) =>
   quizAttemptModel.create({
     quiz: qid,
